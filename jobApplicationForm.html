@@ -21,14 +21,39 @@
 		<div class="form-group">
 			<label class="col-sm-3 control-label">Position</label>
 			<div class="col-sm-9">
-				<select class="form-control" name="position">
-					<option value="" selected="true">Choose a Position</option>
+				<select id="position" name="position" size="3">
 					<option value="SE">Software Engineer</option>
 					<option value="DS">Data Scientist</option>
 					<option value="ITT">IT Support Technician</option>
 					<option value="WD">Web Developer</option>
 					<option value="ISA">Information Security Analyst</option>
-				</select>
+				</select><br><br>
+			  <input type="submit">
+			</div>
+		</div>
+	</fieldset>
+
+	<p>&nbsp;</p>
+
+	<fieldset class="form-horizontal">
+		<legend>Which location are you applying for?</legend>
+		<div class="form-group">
+			<label class="col-sm-3 control-label">Location</label>
+			<div class="col-sm-9">
+				<select id="location" name="location">
+					<option value="" selected="true">Choose a Location</option>
+					<optgroup label="Washington State">
+					    <option value="seattle">Seattle</option>
+					    <option value="renton">Bellevue</option>
+							<option value="redmond">Redmond</option>
+					  </optgroup>
+					  <optgroup label="California">
+					    <option value="san francisco">San Francisco</option>
+					    <option value="san jose">San Jose</option>
+							<option value="palo alto">Palo Alto</option>
+					  </optgroup>
+				</select><br><br>
+				<input type="submit">
 			</div>
 		</div>
 	</fieldset>
@@ -80,6 +105,26 @@
 	</fieldset>
 
 	<p>&nbsp;</p>
+
+	<fieldset class="form-horizontal" >
+		<legend>Major/Area of Study</legend>
+		<label class="col-sm-3 control-label">What is your major?</label>
+		<div class="form-group">
+			<input list="major" name="major">
+			  <datalist id="major">
+			    <option value="Computer Science">
+			    <option value="Computer Engineering">
+			    <option value="Informatics">
+			    <option value="Human Centered Design and Engineering">
+			    <option value="Mathematics">
+					<option value="Business">
+					<option value="Gender Studies">
+					<option value="Dance">
+			  </datalist>
+		</div>
+	</fieldset>
+
+		<p>&nbsp;</p>
 
 	<fieldset class="form-horizontal" >
 		<legend>Account</legend>
