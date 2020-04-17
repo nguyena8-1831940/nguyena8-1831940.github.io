@@ -1,3 +1,12 @@
+  .fixredundancy{
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 10px;
+    border: solid 8px black;
+    text-align: center;
+    background-color: #8E41D5;
+  }
+
   body{
       background-image: url('dark_wood.png');
   }
@@ -21,12 +30,6 @@
 
   #Header{
       width: 500px;
-      margin-left: auto;
-      margin-right: auto;
-      margin-bottom: 10px;
-      border: solid 8px black;
-      text-align: center;
-      background-color: #8E41D5;
   }
 
   #Header h1{
@@ -38,14 +41,8 @@
 
   #LeftNav{
       width: 400px;
-      margin-left: auto;
-      margin-right: auto;
-      margin-bottom: 10px;
-      border: solid 8px black;
       float: left;
-      text-align: center;
       padding-bottom: 8px;
-      background-color: #8E41D5;
   }
 
   #LeftNav img{
@@ -62,31 +59,42 @@
 
   #Content{
       width: 700px;
-      margin-left: auto;
-      margin-right: auto;
-      margin-bottom: 10px;
-      border: solid 8px black;
-      text-align: center;
       padding: 15px;
-      background-color: #8E41D5;
   }
 
   #Footer {
-      margin-left: auto;
-      margin-right: auto;
-      margin-bottom: 10px;
-      border: solid 8px black;
-      text-align: center;
-      background-color: #8E41D5;
+
   }
 
   ul{
-    list-style-type: none;
-    padding-left: 0px;
+      list-style-type: none;
+      padding-left: 0px;
   }
 
   a{
       color: white;
       font-weight: bold;
       font-size: 24px;
+  }
+
+  div {
+      animation: mymove 5s infinite;
+  }
+
+  @keyframes mymove {
+      from {top: 0px;}
+      to {top: 200px;}
+  }
+
+  #div1 {
+      -webkit-backface-visibility: hidden;
+      backface-visibility: hidden;
+  }
+
+  img {
+      filter: grayscale(100%);
+  }
+
+  div.ex1 {
+      overflow: scroll;
   }
